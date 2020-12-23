@@ -74,6 +74,7 @@ WSGI_APPLICATION = 'inspection_django.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+"""
 
 DATABASES = {
     'default': {
@@ -86,6 +87,7 @@ DATABASES = {
         'PORT': 3306,
     }
 }
+"""
 
 AUTH_USER_MODEL = 'user.User'
 
@@ -143,6 +145,7 @@ EMAIL_HOST_PASSWORD = 'password'
 EMAIL_FROM = 'django<304200074@qq.com>'
 
 # Django　キャッシュの設定
+"""
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
@@ -153,9 +156,10 @@ CACHES = {
         }
     }
 }
+"""
 
 # 設定session
-SESSION_ENGINE = "django.contrib.sessions.backends.cache"
-SESSION_CACHE_ALIAS = "default"
+#SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+#SESSION_CACHE_ALIAS = "default"
 
 LOGIN_URL = '/user/'
